@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/ConsoleApplication1/.vs/ConsoleApplication1
+/Courrse11.(3)/.vs/Courrse11.(3)
+/Courrse11.(3)/Courrse11.(3)/x64/Debug/vc143.idb
+*.pdb
+/Course12(1)/.vs/Course12(1)
+*.idb
+/Course12(2)/.vs/Course12(2)
+/Git Tags/.vs/Git Tags
+/Merging Using visual/.vs/Merging Using visual
+/The first Real GitHub Project/.vs/The first Real GitHub Project
