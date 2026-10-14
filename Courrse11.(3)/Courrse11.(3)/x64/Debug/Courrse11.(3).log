@@ -1,0 +1,12 @@
+﻿  Courrse11.(3).cpp
+D:\New folder\Courrse11.(3)\Courrse11.(3)\Courrse11.(3).cpp(57,34): warning C4305: 'argument': truncation from 'double' to 'T'
+D:\New folder\Courrse11.(3)\Courrse11.(3)\Courrse11.(3).cpp(57,34): warning C4305:         with
+D:\New folder\Courrse11.(3)\Courrse11.(3)\Courrse11.(3).cpp(57,34): warning C4305:         [
+D:\New folder\Courrse11.(3)\Courrse11.(3)\Courrse11.(3).cpp(57,34): warning C4305:             T=float
+D:\New folder\Courrse11.(3)\Courrse11.(3)\Courrse11.(3).cpp(57,34): warning C4305:         ]
+D:\New folder\Courrse11.(3)\Courrse11.(3)\Courrse11.(3).cpp(57,29): warning C4305: 'argument': truncation from 'double' to 'T'
+D:\New folder\Courrse11.(3)\Courrse11.(3)\Courrse11.(3).cpp(57,29): warning C4305:         with
+D:\New folder\Courrse11.(3)\Courrse11.(3)\Courrse11.(3).cpp(57,29): warning C4305:         [
+D:\New folder\Courrse11.(3)\Courrse11.(3)\Courrse11.(3).cpp(57,29): warning C4305:             T=float
+D:\New folder\Courrse11.(3)\Courrse11.(3)\Courrse11.(3).cpp(57,29): warning C4305:         ]
+  Courrse11.(3).vcxproj -> D:\New folder\Courrse11.(3)\x64\Debug\Courrse11.(3).exe
