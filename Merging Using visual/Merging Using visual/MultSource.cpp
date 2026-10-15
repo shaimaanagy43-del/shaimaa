@@ -8,5 +8,5 @@ int Mult(int FirstNumber, int secondNumer)
 }
 int main()
 {
-    cout << "Result"<<"10*4 =" << Mult(10, 4) << '\n';
+    cout << "Result: Result:"<<"10*4 =" << Mult(10, 4) << '\n';
 }
