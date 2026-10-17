@@ -9,6 +9,7 @@ class Node
 public:
 	int value;
 	Node* next;
+	Node* prev;
 };
 void InsertAtBegining(Node* &head, int value)
 {
@@ -87,6 +88,42 @@ void DeleteNode(Node*& head, int value)
 	delete Current;
 
 }
+void DeleteFirstNode(Node*& head)
+{
+	Node* Current = head;
+	if (head == NULL)
+	{
+		return;
+	}
+	head = Current->next;
+	delete Current;
+	return;
+}
+void DeleteLastNode(Node*& head)
+{
+	Node* Current = head, * prev = head;
+	if (head == NULL)
+	{
+		return;
+	}
+	if (head == NULL)
+	{
+		return;
+	}
+	if (Current->next == NULL)
+	{
+		head = NULL;
+		delete Current;
+		return;
+	}
+	while (Current != NULL && Current->next != NULL)
+	{
+		prev = Current;
+		Current = Current->next;
+	}
+	prev->next = NULL;
+	delete Current;
+}
 
 
 void PrintList(Node* head)
@@ -100,6 +137,33 @@ void PrintList(Node* head)
 }
 int main()
 {
+
+	Node* head;
+	Node* Node1 = NULL;
+	Node* Node2 = NULL;
+	Node* Node3 = NULL;
+	Node1 = new Node();
+	Node2 = new Node();
+	Node3 = new Node();
+	Node1->value = 1;
+	Node2->value = 2;
+	Node3->value = 3;
+	Node1->next = Node2;
+	Node1->prev = NULL;
+	Node2->next = Node3;
+	Node2->prev = Node1;
+	Node3->next = NULL;
+	Node3->prev = Node2;
+	head = Node1;
+	while (head != NULL)
+	{
+		cout << head->value << endl;
+		head = head->next;
+
+	}
+
+
+
 	//Node* head = NULL;
 	//InsertAtBegining(head, 1);
 	//InsertAtBegining(head, 2);
@@ -109,20 +173,23 @@ int main()
 
 
 	////Node* N1 = Find(head, 2);
-	Node* head = NULL;
-	InsertAtEnd(head, 1);
-	InsertAtEnd(head, 2);
-	InsertAtEnd(head, 3);
-	InsertAtEnd(head, 4);
-	InsertAtEnd(head, 5);
-	InsertAtEnd(head, 6);
+	//Node* head = NULL;
+	//InsertAtEnd(head, 1);
+	//InsertAtEnd(head, 2);
+	//InsertAtEnd(head, 3);
+	//InsertAtEnd(head, 4);
+	//InsertAtEnd(head, 5);
+	//InsertAtEnd(head, 6);
 
-	//InsertAtBegining(head, 0);
+	////InsertAtBegining(head, 0);
+	//PrintList(head);
 
+	//DeleteLastNode(head);
 
-	PrintList(head);
-	DeleteNode(head, 4);
-	PrintList(head);
+	////DeleteFirstNode(head);
+	//PrintList(head);
+	//DeleteNode(head, 4);
+	//PrintList(head);
 
 
 	//Node* N1 = NULL;
