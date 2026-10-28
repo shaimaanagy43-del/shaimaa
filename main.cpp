@@ -3,7 +3,10 @@ using namespace std;
 
 int main()
 {
-    cout << "Student: Name" << endl;
+    cout << "Student: shaimaa" << endl;
     cout << "Course: Git and GitHub" << endl;
+    cout << "I Love C++ Programming!" << endl ;
+    cout<<"Mini Challenge completed!"<<endl;
+
     return 0;
 }
